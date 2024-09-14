@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fef4f8; /* Light pink background for the whole page */
+}
+
+.calculator {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f8e1e7; /* Light pink background for the calculator */
+    border: 2px solid #e6a0b0; /* Slightly darker pink border */
+}
+#display {
+    background-color: #fff; /* White display */
+    color: #333;
+    font-size: 2.5em; /* Increased font size */
+    padding: 40px; /* Increased padding for a larger display area */
+    text-align: right;
+    border-bottom: 2px solid #eae0e2; /* Match the border with the calculator */
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: #96ccf8;/* Black buttons */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333; /* Darker shade on hover */
+}
+
+#clear {
+    grid-column: span 2;
+    background-color: #96ccf8; /* Pink shade for clear button */
+    color: #fff;
+}
+
+#equals {
+    grid-column: span 2;
+    background-color: #96ccf8; /* Slightly darker pink for equals button */
+    color: #fff;
+}
